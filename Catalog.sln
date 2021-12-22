@@ -8,7 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		editorconfig = editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.FA.Catalog.Web", "src\Smart.FA.Catalog.Web\Smart.FA.Catalog.Web.csproj", "{874CD234-A08C-4982-BF22-80208075A136}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart.FA.Catalog.Web", "src\Smart.FA.Catalog.Web\Smart.FA.Catalog.Web.csproj", "{874CD234-A08C-4982-BF22-80208075A136}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Smart.FA.Catalog.Sql", "src\Smart.FA.Catalog.Sql\Smart.FA.Catalog.Sql.sqlproj", "{0EFAB151-6EDE-4357-8687-AE9EB4715D1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

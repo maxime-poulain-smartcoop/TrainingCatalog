@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[Topic]
+(
+	[Id]   INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    [Key] NVARCHAR(35) NOT NULL
+)
