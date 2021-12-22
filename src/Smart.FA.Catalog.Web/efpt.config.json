@@ -1,0 +1,77 @@
+{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "CatalogContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Infrastructure\\Data\\Context",
+   "OutputPath": "Infrastructure\\Data\\Entities",
+   "ProjectRootNamespace": "Smart.FA.Catalog",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Address]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AudienceType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AudienceTypeTraining]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TargetAudience]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TargetAudienceTraining]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Topic]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Training]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingDetail]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingTopic]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingTypeTraining]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": true,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
