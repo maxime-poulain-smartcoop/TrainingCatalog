@@ -19,6 +19,7 @@ builder.Services.AddRazorPages(cfg =>
     ;
 
 builder.Services.AddSmartDesign();
+builder.Services.AddCatalogDependencies(builder.Configuration);
 
 var app = builder.Build();
 
