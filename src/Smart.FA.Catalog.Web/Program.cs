@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages(cfg =>
     {
+        cfg.Conventions.ConfigureFilter(new NotFoundPageFilter());
         cfg.RootDirectory = "/Features";
     })
     ;
@@ -23,6 +24,16 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.Use(async (context, next) =>
+{
+    await next();
+    if (context.Response.StatusCode == 404)
+    {
+        context.Request.Path = "/404";
+        await next();
+    }
+});
 
 app.UseRouting();
 
