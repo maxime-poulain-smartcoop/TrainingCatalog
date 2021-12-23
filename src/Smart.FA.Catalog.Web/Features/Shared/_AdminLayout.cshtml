@@ -139,7 +139,7 @@
                         @foreach (var sideMenuItem in SideMenuItem.List)
                         {
                             <li class="c-side-menu__item @(ViewData[nameof(SideMenuItem)] == sideMenuItem ? "c-side-menu__item--active" : "")">
-                                <a class="c-side-menu__link" href="#">@sideMenuItem.Name</a>
+                                <a class="c-side-menu__link" href="@sideMenuItem.Href">@sideMenuItem.Name</a>
                             </li>
                         }
                     </ul>

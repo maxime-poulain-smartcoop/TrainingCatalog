@@ -45,8 +45,5 @@ public class ListModel : AdminPage
         });
     }
 
-    protected override SideMenuItem GetSideMenuItem()
-    {
-        return SideMenuItem.MyTrainings;
-    }
+    protected override SideMenuItem GetSideMenuItem() => SideMenuItem.MyTrainings;
 }
