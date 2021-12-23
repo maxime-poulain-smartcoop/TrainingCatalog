@@ -1,4 +1,7 @@
+using FluentValidation.AspNetCore;
 using Smart.Design.Razor.Extensions;
+using Smart.FA.Catalog.Web.Extensions;
+using Smart.FA.Catalog.Web.Infrastructure.PageFilters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,11 @@ builder.Services.AddRazorPages(cfg =>
     {
         cfg.Conventions.ConfigureFilter(new NotFoundPageFilter());
         cfg.RootDirectory = "/Features";
+    })
+    .AddFluentValidation(cfg =>
+    {
+        cfg.RegisterValidatorsFromAssemblyContaining<Program>();
+        cfg.DisableDataAnnotationsValidation = true;
     })
     ;
 
