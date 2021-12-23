@@ -1,0 +1,1 @@
+Training catalog is a simple web application in ASP.NET Core to create and list trainings.
