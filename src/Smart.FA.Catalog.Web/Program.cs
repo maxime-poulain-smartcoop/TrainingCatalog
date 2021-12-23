@@ -3,7 +3,12 @@ using Smart.Design.Razor.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages(cfg =>
+    {
+        cfg.RootDirectory = "/Features";
+    })
+    ;
+
 builder.Services.AddSmartDesign();
 
 var app = builder.Build();
